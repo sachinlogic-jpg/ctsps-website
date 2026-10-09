@@ -1,64 +1,63 @@
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#172033;background:#f4f8ff;line-height:1.6}
-a{text-decoration:none}
-.wrap{width:min(1180px,92%);margin:auto}
-header{background:#071a3a;color:white;position:sticky;top:0;z-index:100;box-shadow:0 4px 18px #0002}
-nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
-.brand{font-size:28px;font-weight:900;color:white;letter-spacing:1px}
-.brand span{color:#ffb52e}
-nav a{color:white;font-weight:700;margin:0 10px}
-nav a:hover{color:#ffbd45}
-button,.btn{display:inline-block;border:0;border-radius:10px;padding:13px 22px;font-size:15px;font-weight:bold;cursor:pointer;background:#087cf0;color:white}
-.btn:hover,button:hover{transform:translateY(-2px);filter:brightness(1.06)}
-.hero{padding:35px 0 45px;background:linear-gradient(135deg,#061b46,#0757ad 55%,#08a5dc);color:white}
-.hero-card,.clean-hero{padding:42px 35px;text-align:center;border-radius:24px;background:linear-gradient(135deg,#fff,#edf6ff);color:#102b55;box-shadow:0 12px 35px #001b4930;border:2px solid #ffffff80}
-.clean-hero{margin:0 auto 22px;max-width:1100px}
-.eyebrow{display:inline-block;color:#087cf0;font-weight:900;letter-spacing:2px;font-size:14px;margin-bottom:10px}
-.hero h1,.clean-hero h1{font-size:clamp(28px,4vw,48px);line-height:1.2;margin:12px 0 18px;color:#082d65}
-.hero h2,.clean-hero h2{font-size:clamp(20px,3vw,30px);margin:12px 0;color:#0757ad}
-.hero p,.clean-hero p{font-size:17px;max-width:900px;margin:12px auto 22px;color:#40516a}
-.hero strong,.clean-hero strong{display:inline-block;padding:12px 18px;border-radius:12px;background:#e1f2ff;color:#0757ad}
-.hero .btn,.clean-hero .btn{margin:8px}
-section{scroll-margin-top:90px}
-.section{padding:55px 0}
-.section.light{background:#fff}
-.section.dark{background:#eaf3ff}
-.title{text-align:center;margin:0 auto 28px}
-.title span{font-size:14px;letter-spacing:2px;font-weight:900;color:#087cf0}
-.title h2{font-size:clamp(26px,3vw,36px);margin:8px 0;color:#102b55}
-.courses,.gallery,.videos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
-.courses article,.course-card{padding:24px;background:white;border:1px solid #dce8f7;border-radius:18px;box-shadow:0 6px 22px #102b550c}
-.courses article h3,.course-card h3{color:#0757ad;margin:0 0 10px}
-.courses article p,.course-card p{color:#526178}
-details{margin-top:14px}
-summary{cursor:pointer;color:#0757ad;font-weight:bold}
-.gallery img{width:100%;height:230px;object-fit:cover;border-radius:16px;background:#e3edfa;box-shadow:0 6px 18px #001b4918}
-.videos video{width:100%;border-radius:16px;background:#102033}
-.contact-grid,.contact-grid>*{min-width:0}
-.contact-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
-.contact-grid>div,.contact-grid form{padding:24px;background:white;border-radius:18px;box-shadow:0 6px 22px #102b5510}
-input,textarea,select{width:100%;padding:13px;margin:7px 0 14px;border:1px solid #ccd8e8;border-radius:9px;font:inherit}
-textarea{min-height:110px}
-footer{background:#071a3a;color:white;text-align:center;padding:25px}
-.whatsapp,.whatsapp-button{position:fixed;right:18px;bottom:20px;z-index:200;background:#16a34a;color:white;padding:13px 20px;border-radius:30px;font-weight:bold;box-shadow:0 5px 18px #0003}
-img{max-width:100%}
-@media(max-width:800px){nav{justify-content:center;padding:14px 0}nav a{margin:5px;font-size:14px}.brand{width:100%;text-align:center}.hero{padding:22px 0 30px}.hero-card,.clean-hero{padding:28px 18px}.courses,.gallery,.videos{grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.gallery img{height:190px}.contact-grid{grid-template-columns:1fr}}
-@media(max-width:500px){.courses,.gallery,.videos{grid-template-columns:1fr}.gallery img{height:auto;max-height:320px}.section{padding:38px 0}.hero p,.clean-hero p{font-size:15px}.whatsapp,.whatsapp-button{right:10px;bottom:12px;padding:11px 15px}}
-/* CTSPS Banner Background and Logo */
-.hero {
-  background: linear-gradient(rgba(0,20,70,0.55), rgba(0,80,160,0.45)), url("media/Practical%20Technical%20Training%20Hero%20Banner.png") center/cover no-repeat !important;
-  padding: 45px 0 !important;
+
+/* CTSPS WEBSITE - CLEAN DESIGN */
+* {
+  box-sizing: border-box;
 }
-.hero-card {
-  background: rgba(255,255,255,0.94) !important;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.25) !important;
+
+html {
+  scroll-behavior: smooth;
 }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #172033;
+  background: #f4f8ff;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+img, video {
+  max-width: 100%;
+}
+
+.wrap {
+  width: min(1180px, 92%);
+  margin: auto;
+}
+
+/* HEADER */
+header {
+  background: #071a3a;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 18px #0002;
+}
+
+.nav {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
 .brand {
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  font-size: 28px;
+  font-weight: 900;
+  color: white;
+  letter-spacing: 1px;
 }
+
 .brand:before {
   content: "CTS";
   display: inline-grid;
@@ -66,32 +65,469 @@ img{max-width:100%}
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  background: linear-gradient(135deg,#0877d1,#07316f);
+  background: linear-gradient(135deg, #0877d1, #07316f);
   border: 2px solid #f7b733;
   color: white;
   font-size: 14px;
 }
+
 .brand span {
-  color: #f7b733 !important;
-}
-/* CTSPS Banner Image Fix */
-.hero {
-  background: linear-gradient(rgba(0,20,70,0.25), rgba(0,80,160,0.25)), url("media/Practical%20Technical%20Training%20Hero%20Banner.png") center/cover no-repeat !important;
-  padding: 45px 0 !important;
-}
-.hero-card {
-  background: rgba(255,255,255,0.92) !important;
-}
-.hero-banner {
-  display: block;
-  width: 100%;
-  max-height: 420px;
-  object-fit: contain;
-  margin: 0 auto 20px;
-  border-radius: 16px;
+  color: #f7b733;
 }
 
-.hero-card,
+nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+nav a {
+  color: white;
+  font-weight: 700;
+  padding: 8px 5px;
+}
+
+nav a:hover {
+  color: #ffbd45;
+}
+
+.menu {
+  display: none;
+}
+
+/* BUTTONS */
+button, .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 0;
+  border-radius: 10px;
+  padding: 13px 22px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  background: #087cf0;
+  color: white;
+  transition: transform .2s, filter .2s;
+}
+
+.btn:hover, button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.06);
+}
+
+.btn.wa {
+  background: #16a34a;
+  color: white;
+}
+
+.btn.call {
+  background: #0787e8;
+  color: white;
+}
+
+.btn.map {
+  background: #0757ad;
+  color: white;
+}
+
+/* HERO BANNER IMAGE */
+.hero {
+  position: relative;
+  padding: 0 0 24px;
+  background: #e8f5ff;
+  color: #102b55;
+}
+
+.hero:before {
+  content: "";
+  display: block;
+  width: 100%;
+  aspect-ratio: 1821 / 864;
+  min-height: 240px;
+  max-height: 650px;
+  background-image: url("media/Practical%20Technical%20Training%20Hero%20Banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #071a3a;
+}
+
+.hero-card {
+  padding: 0;
+  margin: 0 auto;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Hide duplicate text over the banner */
 .clean-hero {
-  background: rgba(255,255,255,0.72) !important;
+  display: none;
+}
+
+/* REAL, WORKING CONTACT BUTTONS */
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  padding: 18px 12px 0;
+}
+
+.hero-actions .btn {
+  min-width: 190px;
+  border-radius: 10px;
+  padding: 14px 22px;
+}
+
+/* GENERAL SECTIONS */
+section {
+  scroll-margin-top: 90px;
+}
+
+.intro {
+  padding: 35px 0;
+  background: white;
+}
+
+.intro > .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.intro h1 {
+  margin: 8px 0;
+  color: #102b55;
+  font-size: clamp(24px, 3vw, 36px);
+}
+
+.intro p {
+  color: #526178;
+}
+
+.eyebrow {
+  display: inline-block;
+  color: #087cf0;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.quick {
+  display: grid;
+  gap: 5px;
+  min-width: 220px;
+  padding: 20px;
+  background: #eef6ff;
+  border-radius: 14px;
+  color: #102b55;
+}
+
+.quick span {
+  color: #526178;
+}
+
+.section {
+  padding: 55px 0;
+}
+
+.section.light {
+  background: white;
+}
+
+.section.dark {
+  background: #eaf3ff;
+}
+
+.title {
+  text-align: center;
+  margin: 0 auto 28px;
+}
+
+.title.left {
+  text-align: left;
+  margin-left: 0;
+}
+
+.title span {
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 900;
+  color: #087cf0;
+}
+
+.title h2 {
+  font-size: clamp(26px, 3vw, 36px);
+  margin: 8px 0;
+  color: #102b55;
+}
+
+.title p {
+  color: #526178;
+}
+
+/* COURSES, PHOTOS AND VIDEOS */
+.courses, .gallery, .videos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.courses article, .course-card, .videos article {
+  padding: 24px;
+  background: white;
+  border: 1px solid #dce8f7;
+  border-radius: 18px;
+  box-shadow: 0 6px 22px #102b550c;
+  min-width: 0;
+}
+
+.courses article > b {
+  font-size: 26px;
+}
+
+.courses article h3, .course-card h3, .videos h3 {
+  color: #0757ad;
+  margin: 5px 0 10px;
+}
+
+.courses article em {
+  color: #16a34a;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.courses article p, .course-card p {
+  color: #526178;
+}
+
+details {
+  margin-top: 14px;
+  text-align: left;
+}
+
+summary {
+  cursor: pointer;
+  color: #0757ad;
+  font-weight: bold;
+  padding: 8px 0;
+}
+
+details ul {
+  padding-left: 22px;
+  line-height: 1.7;
+}
+
+.gallery img {
+  display: block;
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 16px;
+  background: #e3edfa;
+  box-shadow: 0 6px 18px #001b4918;
+}
+
+.videos video {
+  display: block;
+  width: 100%;
+  border-radius: 12px;
+  background: #102033;
+}
+
+/* CONTACT AND ENQUIRY FORM */
+.contact {
+  background: #eef6ff;
+}
+
+.contact-grid, .contact-grid > * {
+  min-width: 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.contact-grid > div,
+.contact-grid form {
+  padding: 24px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 6px 22px #102b5510;
+}
+
+.bigcontact {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.bigcontact a {
+  color: #0757ad;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 13px;
+  margin: 7px 0 14px;
+  border: 1px solid #ccd8e8;
+  border-radius: 9px;
+  font: inherit;
+}
+
+textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+/* FOOTER AND FLOATING WHATSAPP */
+footer {
+  background: #071a3a;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+.floatwa, .whatsapp, .whatsapp-button {
+  position: fixed;
+  right: 18px;
+  bottom: 20px;
+  z-index: 200;
+  background: #16a34a;
+  color: white;
+  padding: 13px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  box-shadow: 0 5px 18px #0003;
+}
+
+/* TABLETS AND MOBILE */
+@media (max-width: 800px) {
+  .nav {
+    justify-content: space-between;
+    padding: 12px 0;
+  }
+
+  .brand {
+    font-size: 23px;
+  }
+
+  .menu {
+    display: inline-flex;
+    padding: 10px 14px;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px 0 12px;
+  }
+
+  nav.open {
+    display: flex;
+  }
+
+  nav a {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero:before {
+    aspect-ratio: 1821 / 864;
+    min-height: 200px;
+    background-size: contain;
+  }
+
+  .intro > .wrap {
+    display: block;
+  }
+
+  .quick {
+    margin-top: 18px;
+  }
+
+  .courses, .gallery, .videos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .gallery img {
+    height: 190px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .wrap {
+    width: 92%;
+  }
+
+  .brand {
+    font-size: 20px;
+  }
+
+  .brand:before {
+    width: 34px;
+    height: 34px;
+  }
+
+  .hero:before {
+    aspect-ratio: 1821 / 864;
+    min-height: 145px;
+    background-size: contain;
+  }
+
+  .hero-actions {
+    gap: 10px;
+    padding-top: 12px;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .section {
+    padding: 38px 0;
+  }
+
+  .courses, .gallery, .videos {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery img {
+    height: auto;
+    max-height: 320px;
+    object-fit: contain;
+  }
+
+  .courses article, .course-card, .videos article {
+    padding: 19px;
+  }
+
+  .floatwa, .whatsapp, .whatsapp-button {
+    right: 10px;
+    bottom: 12px;
+    padding: 11px 15px;
+  }
 }
