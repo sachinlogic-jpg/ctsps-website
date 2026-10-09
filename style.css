@@ -531,3 +531,10 @@ footer {
     padding: 11px 15px;
   }
 }
+
+/* FIX: REMOVE DUPLICATE BANNER NAVIGATION */
+.hero:before {
+  background-size: 100% 125%;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
