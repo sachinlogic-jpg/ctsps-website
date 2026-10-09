@@ -45,3 +45,32 @@ footer{background:#071a3a;color:white;text-align:center;padding:25px}
 img{max-width:100%}
 @media(max-width:800px){nav{justify-content:center;padding:14px 0}nav a{margin:5px;font-size:14px}.brand{width:100%;text-align:center}.hero{padding:22px 0 30px}.hero-card,.clean-hero{padding:28px 18px}.courses,.gallery,.videos{grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.gallery img{height:190px}.contact-grid{grid-template-columns:1fr}}
 @media(max-width:500px){.courses,.gallery,.videos{grid-template-columns:1fr}.gallery img{height:auto;max-height:320px}.section{padding:38px 0}.hero p,.clean-hero p{font-size:15px}.whatsapp,.whatsapp-button{right:10px;bottom:12px;padding:11px 15px}}
+/* CTSPS Banner Background and Logo */
+.hero {
+  background: linear-gradient(rgba(0,20,70,0.55), rgba(0,80,160,0.45)), url("media/Practical%20Technical%20Training%20Hero%20Banner.png") center/cover no-repeat !important;
+  padding: 45px 0 !important;
+}
+.hero-card {
+  background: rgba(255,255,255,0.94) !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25) !important;
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.brand:before {
+  content: "CTS";
+  display: inline-grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: linear-gradient(135deg,#0877d1,#07316f);
+  border: 2px solid #f7b733;
+  color: white;
+  font-size: 14px;
+}
+.brand span {
+  color: #f7b733 !important;
+}
