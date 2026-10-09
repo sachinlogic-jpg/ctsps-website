@@ -1,1 +1,47 @@
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#172033;background:#fff;line-height:1.55}.wrap{width:min(1180px,92%);margin:auto}header{position:sticky;top:0;z-index:50;background:#071a3d;color:#fff;box-shadow:0 4px 18px #0002}.nav{height:68px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:29px;font-weight:900;color:#fff;text-decoration:none}.brand span{color:#ffd21a;font-size:15px;margin-left:5px}nav{display:flex;gap:22px}nav a{color:#fff;text-decoration:none;font-weight:700}.menu{display:none;background:none;border:0;color:#fff;font-size:27px}.hero{background:linear-gradient(135deg,#071a3d,#0b4db3);padding:24px 0 35px}.hero-card{background:#fff;border-radius:22px;padding:10px;box-shadow:0 18px 55px #0005}.hero-card img{display:block;width:100%;max-height:620px;object-fit:contain;border-radius:15px}.hero-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;padding:12px}.btn{display:inline-block;padding:13px 20px;border-radius:10px;text-decoration:none;font-weight:800;border:0;cursor:pointer}.wa{background:#16a34a;color:#fff}.call{background:#0b5bd3;color:#fff}.map{background:#172033;color:#fff}.intro{background:#f6f9ff;padding:35px 0}.intro .wrap{display:grid;grid-template-columns:1fr 320px;gap:30px;align-items:center}.eyebrow,.title>span{font-size:13px;letter-spacing:1.5px;font-weight:900;color:#0b5bd3}.intro h1{font-size:38px;margin:7px 0}.intro p{font-size:18px;color:#58657a}.quick{background:#071a3d;color:#fff;padding:22px;border-radius:16px;display:grid;gap:5px}.quick span{color:#cdd8eb;margin-bottom:8px}.section{padding:78px 0}.light{background:#f6f8fc}.dark{background:#071a3d;color:#fff}.title{text-align:center;margin-bottom:36px}.title h2{font-size:36px;margin:5px 0}.title p{color:#68758b}.dark .title p{color:#b9c7dc}.title.left{text-align:left}.courses{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.courses article{background:#fff;border:1px solid #e2e8f1;border-radius:18px;padding:25px;box-shadow:0 8px 28px #15345a10}.courses b{font-size:34px}.courses h3{margin:7px 0;font-size:20px}.courses em{font-style:normal;color:#0b5bd3;font-weight:900}.courses p{color:#59667a}.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.gallery img{width:100%;height:240px;object-fit:cover;border-radius:13px;background:#10274d;box-shadow:0 7px 20px #0003}.gallery img:first-child{grid-column:span 2;grid-row:span 2;height:494px}.videos{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.videos article{background:#f7f9fc;border-radius:16px;overflow:hidden}.videos video{width:100%;height:430px;display:block;object-fit:cover;background:#000}.videos h3{padding:0 15px 15px;margin:12px 0 0;color:#172033}.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.benefits div{background:#fff;padding:20px;border-radius:13px;font-weight:800;box-shadow:0 6px 20px #1a386615}.contact{background:linear-gradient(135deg,#eaf2ff,#fff)}.contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:start}.bigcontact{font-size:28px;font-weight:900}.bigcontact a{color:#0b5bd3;text-decoration:none}.actions{margin-top:25px}.formbox{background:#fff;padding:28px;border-radius:18px;box-shadow:0 10px 35px #183c6918}form{display:grid;gap:12px;margin-top:16px}input,select,textarea{font:inherit;width:100%;padding:13px;border:1px solid #d5ddea;border-radius:9px}footer{background:#06132d;color:#d9e3f3;text-align:center;padding:32px 0}.floatwa{position:fixed;right:16px;bottom:16px;background:#16a34a;color:#fff;padding:13px 18px;border-radius:999px;text-decoration:none;font-weight:900;box-shadow:0 8px 25px #0004;z-index:60}@media(max-width:850px){nav{display:none;position:absolute;top:68px;left:0;right:0;background:#071a3d;padding:18px 4%;flex-direction:column;gap:12px}.open{display:flex}.menu{display:block}.intro .wrap,.contact-grid{grid-template-columns:1fr}.intro h1{font-size:30px}.courses{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr)}.gallery img{height:190px}.gallery img:first-child{grid-column:span 2;height:250px}.videos{grid-template-columns:1fr}.videos video{height:500px}.benefits{grid-template-columns:1fr}.section{padding:58px 0}.title h2{font-size:29px}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#172033;background:#f4f8ff;line-height:1.6}
+a{text-decoration:none}
+.wrap{width:min(1180px,92%);margin:auto}
+header{background:#071a3a;color:white;position:sticky;top:0;z-index:100;box-shadow:0 4px 18px #0002}
+nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.brand{font-size:28px;font-weight:900;color:white;letter-spacing:1px}
+.brand span{color:#ffb52e}
+nav a{color:white;font-weight:700;margin:0 10px}
+nav a:hover{color:#ffbd45}
+button,.btn{display:inline-block;border:0;border-radius:10px;padding:13px 22px;font-size:15px;font-weight:bold;cursor:pointer;background:#087cf0;color:white}
+.btn:hover,button:hover{transform:translateY(-2px);filter:brightness(1.06)}
+.hero{padding:35px 0 45px;background:linear-gradient(135deg,#061b46,#0757ad 55%,#08a5dc);color:white}
+.hero-card,.clean-hero{padding:42px 35px;text-align:center;border-radius:24px;background:linear-gradient(135deg,#fff,#edf6ff);color:#102b55;box-shadow:0 12px 35px #001b4930;border:2px solid #ffffff80}
+.clean-hero{margin:0 auto 22px;max-width:1100px}
+.eyebrow{display:inline-block;color:#087cf0;font-weight:900;letter-spacing:2px;font-size:14px;margin-bottom:10px}
+.hero h1,.clean-hero h1{font-size:clamp(28px,4vw,48px);line-height:1.2;margin:12px 0 18px;color:#082d65}
+.hero h2,.clean-hero h2{font-size:clamp(20px,3vw,30px);margin:12px 0;color:#0757ad}
+.hero p,.clean-hero p{font-size:17px;max-width:900px;margin:12px auto 22px;color:#40516a}
+.hero strong,.clean-hero strong{display:inline-block;padding:12px 18px;border-radius:12px;background:#e1f2ff;color:#0757ad}
+.hero .btn,.clean-hero .btn{margin:8px}
+section{scroll-margin-top:90px}
+.section{padding:55px 0}
+.section.light{background:#fff}
+.section.dark{background:#eaf3ff}
+.title{text-align:center;margin:0 auto 28px}
+.title span{font-size:14px;letter-spacing:2px;font-weight:900;color:#087cf0}
+.title h2{font-size:clamp(26px,3vw,36px);margin:8px 0;color:#102b55}
+.courses,.gallery,.videos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.courses article,.course-card{padding:24px;background:white;border:1px solid #dce8f7;border-radius:18px;box-shadow:0 6px 22px #102b550c}
+.courses article h3,.course-card h3{color:#0757ad;margin:0 0 10px}
+.courses article p,.course-card p{color:#526178}
+details{margin-top:14px}
+summary{cursor:pointer;color:#0757ad;font-weight:bold}
+.gallery img{width:100%;height:230px;object-fit:cover;border-radius:16px;background:#e3edfa;box-shadow:0 6px 18px #001b4918}
+.videos video{width:100%;border-radius:16px;background:#102033}
+.contact-grid,.contact-grid>*{min-width:0}
+.contact-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.contact-grid>div,.contact-grid form{padding:24px;background:white;border-radius:18px;box-shadow:0 6px 22px #102b5510}
+input,textarea,select{width:100%;padding:13px;margin:7px 0 14px;border:1px solid #ccd8e8;border-radius:9px;font:inherit}
+textarea{min-height:110px}
+footer{background:#071a3a;color:white;text-align:center;padding:25px}
+.whatsapp,.whatsapp-button{position:fixed;right:18px;bottom:20px;z-index:200;background:#16a34a;color:white;padding:13px 20px;border-radius:30px;font-weight:bold;box-shadow:0 5px 18px #0003}
+img{max-width:100%}
+@media(max-width:800px){nav{justify-content:center;padding:14px 0}nav a{margin:5px;font-size:14px}.brand{width:100%;text-align:center}.hero{padding:22px 0 30px}.hero-card,.clean-hero{padding:28px 18px}.courses,.gallery,.videos{grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.gallery img{height:190px}.contact-grid{grid-template-columns:1fr}}
+@media(max-width:500px){.courses,.gallery,.videos{grid-template-columns:1fr}.gallery img{height:auto;max-height:320px}.section{padding:38px 0}.hero p,.clean-hero p{font-size:15px}.whatsapp,.whatsapp-button{right:10px;bottom:12px;padding:11px 15px}}
