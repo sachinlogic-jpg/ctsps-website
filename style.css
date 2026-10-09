@@ -74,3 +74,19 @@ img{max-width:100%}
 .brand span {
   color: #f7b733 !important;
 }
+/* CTSPS Banner Image Fix */
+.hero {
+  background: linear-gradient(rgba(0,20,70,0.25), rgba(0,80,160,0.25)), url("media/Practical%20Technical%20Training%20Hero%20Banner.png") center/cover no-repeat !important;
+  padding: 45px 0 !important;
+}
+.hero-card {
+  background: rgba(255,255,255,0.92) !important;
+}
+.hero-banner {
+  display: block;
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  margin: 0 auto 20px;
+  border-radius: 16px;
+}
