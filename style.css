@@ -1,5 +1,6 @@
 
-/* CTSPS WEBSITE - CLEAN DESIGN */
+/* CTSPS BHILAI - COMPLETE WEBSITE STYLE */
+
 * {
   box-sizing: border-box;
 }
@@ -20,7 +21,8 @@ a {
   text-decoration: none;
 }
 
-img, video {
+img,
+video {
   max-width: 100%;
 }
 
@@ -29,115 +31,19 @@ img, video {
   margin: auto;
 }
 
-/* HEADER */
+/* HIDE THE EXTRA TOP MENU */
 header {
-  background: #071a3a;
-  color: white;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  box-shadow: 0 4px 18px #0002;
+  display: none !important;
 }
 
-.nav {
-  min-height: 76px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 18px;
-  flex-wrap: wrap;
-}
-
-.brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 28px;
-  font-weight: 900;
-  color: white;
-  letter-spacing: 1px;
-}
-
-.brand:before {
-  content: "CTS";
-  display: inline-grid;
-  place-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  background: linear-gradient(135deg, #0877d1, #07316f);
-  border: 2px solid #f7b733;
-  color: white;
-  font-size: 14px;
-}
-
-.brand span {
-  color: #f7b733;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-}
-
-nav a {
-  color: white;
-  font-weight: 700;
-  padding: 8px 5px;
-}
-
-nav a:hover {
-  color: #ffbd45;
-}
-
-.menu {
-  display: none;
-}
-
-/* BUTTONS */
-button, .btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  border: 0;
-  border-radius: 10px;
-  padding: 13px 22px;
-  font-size: 15px;
-  font-weight: bold;
-  cursor: pointer;
-  background: #087cf0;
-  color: white;
-  transition: transform .2s, filter .2s;
-}
-
-.btn:hover, button:hover {
-  transform: translateY(-2px);
-  filter: brightness(1.06);
-}
-
-.btn.wa {
-  background: #16a34a;
-  color: white;
-}
-
-.btn.call {
-  background: #0787e8;
-  color: white;
-}
-
-.btn.map {
-  background: #0757ad;
-  color: white;
-}
-
-/* HERO BANNER IMAGE */
+/* MAIN BANNER */
 .hero {
-  position: relative;
-  padding: 0 0 24px;
-  background: #e8f5ff;
-  color: #102b55;
+  position: relative !important;
+  width: 100%;
+  margin: 0;
+  padding: 0 !important;
+  background: #071a3a;
+  overflow: hidden;
 }
 
 .hero:before {
@@ -145,53 +51,99 @@ button, .btn {
   display: block;
   width: 100%;
   aspect-ratio: 1821 / 864;
-  min-height: 240px;
-  max-height: 650px;
   background-image: url("media/Practical%20Technical%20Training%20Hero%20Banner.png");
+  background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  background-color: #071a3a;
+}
+
+.hero > .wrap {
+  position: static;
+  width: 100%;
+  max-width: none;
+  margin: 0;
 }
 
 .hero-card {
-  padding: 0;
-  margin: 0 auto;
-  background: transparent;
-  border: 0;
-  border-radius: 0;
-  box-shadow: none;
+  position: absolute !important;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
 }
 
-/* Hide duplicate text over the banner */
 .clean-hero {
-  display: none;
+  display: none !important;
 }
 
-/* REAL, WORKING CONTACT BUTTONS */
+/* CLICKABLE WHATSAPP AND PHONE BUTTONS */
 .hero-actions {
+  position: absolute;
+  left: 14.5%;
+  bottom: 8.5%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 14px;
-  flex-wrap: wrap;
-  padding: 18px 12px 0;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 2%;
+  width: auto;
+  margin: 0;
+  padding: 0;
 }
 
 .hero-actions .btn {
-  min-width: 190px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  padding: 1vw 2vw;
+  border: 0;
   border-radius: 10px;
-  padding: 14px 22px;
+  color: #fff;
+  font-size: clamp(10px, 1.25vw, 20px);
+  font-weight: 700;
+  line-height: 1.4;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.btn.wa {
+  background: #08a83e;
+  color: #fff;
+}
+
+.btn.call {
+  background: #0787e8;
+  color: #fff;
+}
+
+.btn.map {
+  background: #0757ad;
+  color: #fff;
+}
+
+.btn:hover,
+button:hover {
+  filter: brightness(1.08);
 }
 
 /* GENERAL SECTIONS */
 section {
-  scroll-margin-top: 90px;
+  scroll-margin-top: 20px;
+}
+
+.section {
+  padding: 55px 0;
 }
 
 .intro {
   padding: 35px 0;
-  background: white;
+  background: #fff;
 }
 
 .intro > .wrap {
@@ -201,10 +153,13 @@ section {
   gap: 28px;
 }
 
+.intro > .wrap > div {
+  min-width: 0;
+}
+
 .intro h1 {
   margin: 8px 0;
-  color: #102b55;
-  font-size: clamp(24px, 3vw, 36px);
+  color: #07316f;
 }
 
 .intro p {
@@ -212,111 +167,71 @@ section {
 }
 
 .eyebrow {
-  display: inline-block;
-  color: #087cf0;
+  color: #0877c6;
   font-weight: 900;
   letter-spacing: 2px;
-  font-size: 14px;
-  margin-bottom: 8px;
+  font-size: 13px;
 }
 
 .quick {
-  display: grid;
-  gap: 5px;
-  min-width: 220px;
   padding: 20px;
   background: #eef6ff;
   border-radius: 14px;
-  color: #102b55;
 }
 
-.quick span {
-  color: #526178;
-}
-
-.section {
-  padding: 55px 0;
-}
-
-.section.light {
-  background: white;
-}
-
-.section.dark {
-  background: #eaf3ff;
-}
-
+/* TITLES */
 .title {
+  margin-bottom: 25px;
   text-align: center;
-  margin: 0 auto 28px;
-}
-
-.title.left {
-  text-align: left;
-  margin-left: 0;
-}
-
-.title span {
-  font-size: 14px;
-  letter-spacing: 2px;
-  font-weight: 900;
-  color: #087cf0;
 }
 
 .title h2 {
-  font-size: clamp(26px, 3vw, 36px);
-  margin: 8px 0;
-  color: #102b55;
+  margin: 5px 0;
+  color: #07316f;
 }
 
-.title p {
-  color: #526178;
+.title span {
+  color: #0877c6;
+  font-weight: 800;
 }
 
-/* COURSES, PHOTOS AND VIDEOS */
-.courses, .gallery, .videos {
+/* COURSES */
+.courses {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 22px;
+  gap: 20px;
 }
 
-.courses article, .course-card, .videos article {
-  padding: 24px;
-  background: white;
-  border: 1px solid #dce8f7;
-  border-radius: 18px;
-  box-shadow: 0 6px 22px #102b550c;
+.courses article,
+.course-card {
   min-width: 0;
+  padding: 23px;
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid #e0eafa;
+  box-shadow: 0 5px 18px #001b4910;
 }
 
-.courses article > b {
-  font-size: 26px;
-}
-
-.courses article h3, .course-card h3, .videos h3 {
+.courses article h3,
+.course-card h3 {
+  margin-top: 0;
   color: #0757ad;
-  margin: 5px 0 10px;
 }
 
-.courses article em {
-  color: #16a34a;
-  font-style: normal;
-  font-weight: 700;
-}
-
-.courses article p, .course-card p {
+.courses article p,
+.course-card p {
   color: #526178;
 }
 
 details {
-  margin-top: 14px;
+  margin-top: 12px;
   text-align: left;
 }
 
 summary {
   cursor: pointer;
+  font-weight: 700;
   color: #0757ad;
-  font-weight: bold;
   padding: 8px 0;
 }
 
@@ -325,14 +240,28 @@ details ul {
   line-height: 1.7;
 }
 
+/* PHOTO GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
 .gallery img {
   display: block;
   width: 100%;
   height: 230px;
   object-fit: cover;
-  border-radius: 16px;
+  border-radius: 14px;
   background: #e3edfa;
   box-shadow: 0 6px 18px #001b4918;
+}
+
+/* VIDEOS */
+.videos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
 }
 
 .videos video {
@@ -342,13 +271,27 @@ details ul {
   background: #102033;
 }
 
-/* CONTACT AND ENQUIRY FORM */
-.contact {
+.videos article {
+  min-width: 0;
+  padding: 15px;
+  background: white;
+  border-radius: 14px;
+}
+
+/* ABOUT */
+#about {
   background: #eef6ff;
 }
 
-.contact-grid, .contact-grid > * {
-  min-width: 0;
+#about p {
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* CONTACT */
+.contact {
+  background: #eef6ff;
 }
 
 .contact-grid {
@@ -359,8 +302,9 @@ details ul {
 
 .contact-grid > div,
 .contact-grid form {
+  min-width: 0;
   padding: 24px;
-  background: white;
+  background: #fff;
   border-radius: 18px;
   box-shadow: 0 6px 22px #102b5510;
 }
@@ -376,11 +320,13 @@ details ul {
 
 .actions {
   display: flex;
-  gap: 12px;
   flex-wrap: wrap;
+  gap: 12px;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
   width: 100%;
   padding: 13px;
   margin: 7px 0 14px;
@@ -394,65 +340,44 @@ textarea {
   resize: vertical;
 }
 
-/* FOOTER AND FLOATING WHATSAPP */
+button,
+.btn {
+  cursor: pointer;
+}
+
+/* FOOTER */
 footer {
+  padding: 25px;
   background: #071a3a;
   color: white;
   text-align: center;
-  padding: 25px;
 }
 
-.floatwa, .whatsapp, .whatsapp-button {
+/* FLOATING WHATSAPP */
+.floatwa,
+.whatsapp,
+.whatsapp-button {
   position: fixed;
   right: 18px;
   bottom: 20px;
   z-index: 200;
-  background: #16a34a;
-  color: white;
   padding: 13px 20px;
   border-radius: 30px;
+  background: #16a34a;
+  color: white;
   font-weight: bold;
   box-shadow: 0 5px 18px #0003;
 }
 
-/* TABLETS AND MOBILE */
+/* TABLETS */
 @media (max-width: 800px) {
-  .nav {
-    justify-content: space-between;
-    padding: 12px 0;
+  .courses,
+  .gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .brand {
-    font-size: 23px;
-  }
-
-  .menu {
-    display: inline-flex;
-    padding: 10px 14px;
-  }
-
-  nav {
-    display: none;
-    width: 100%;
-    flex-direction: column;
-    gap: 4px;
-    padding: 8px 0 12px;
-  }
-
-  nav.open {
-    display: flex;
-  }
-
-  nav a {
-    margin: 0;
-    width: 100%;
-    text-align: center;
-  }
-
-  .hero:before {
-    aspect-ratio: 1821 / 864;
-    min-height: 200px;
-    background-size: contain;
+  .videos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .intro > .wrap {
@@ -463,55 +388,40 @@ footer {
     margin-top: 18px;
   }
 
-  .courses, .gallery, .videos {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 14px;
+  .contact-grid {
+    grid-template-columns: 1fr;
   }
 
   .gallery img {
     height: 190px;
   }
-
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
+/* MOBILE */
 @media (max-width: 500px) {
-  .wrap {
-    width: 92%;
-  }
-
-  .brand {
-    font-size: 20px;
-  }
-
-  .brand:before {
-    width: 34px;
-    height: 34px;
-  }
-
   .hero:before {
     aspect-ratio: 1821 / 864;
-    min-height: 145px;
-    background-size: contain;
   }
 
   .hero-actions {
-    gap: 10px;
-    padding-top: 12px;
+    left: 14%;
+    bottom: 8%;
+    gap: 1%;
   }
 
   .hero-actions .btn {
-    width: 100%;
-    min-width: 0;
+    padding: 1vw 1.4vw;
+    font-size: clamp(7px, 1.9vw, 10px);
+    border-radius: 5px;
   }
 
   .section {
     padding: 38px 0;
   }
 
-  .courses, .gallery, .videos {
+  .courses,
+  .gallery,
+  .videos {
     grid-template-columns: 1fr;
   }
 
@@ -521,27 +431,17 @@ footer {
     object-fit: contain;
   }
 
-  .courses article, .course-card, .videos article {
+  .courses article,
+  .course-card,
+  .videos article {
     padding: 19px;
   }
 
-  .floatwa, .whatsapp, .whatsapp-button {
+  .floatwa,
+  .whatsapp,
+  .whatsapp-button {
     right: 10px;
     bottom: 12px;
     padding: 11px 15px;
   }
-}
-
-/* FIX: REMOVE DUPLICATE BANNER NAVIGATION */
-.hero:before {
-  background-size: 100% 125%;
-  background-position: center bottom;
-  background-repeat: no-repeat;
-}
-
-/* FIX DUPLICATE MENU INSIDE BANNER */
-.hero:before {
-  background-size: 100% 100%;
-  background-position: center bottom;
-  background-repeat: no-repeat;
 }
