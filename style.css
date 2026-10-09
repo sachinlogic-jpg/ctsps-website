@@ -33,7 +33,7 @@ video {
 
 /* SHOW THE WEBSITE MENU */
 header {
-  display: block !important;
+  display: none !important;
 }
 
 /* MAIN BANNER */
