@@ -800,3 +800,13 @@ header nav a {
     font-size: 14px !important;
   }
 }
+/* BUTTONS LOWER ON MOBILE AND LAPTOP */
+.hero-actions {
+  bottom: 0% !important;
+}
+
+@media (max-width: 800px) {
+  .hero-actions {
+    bottom: 0% !important;
+  }
+}
