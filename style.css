@@ -810,3 +810,10 @@ header nav a {
     bottom: 0% !important;
   }
 }
+/* MOBILE BUTTON POSITION FIX */
+@media (max-width: 800px) {
+  .hero-actions {
+    bottom: 0% !important;
+    transform: translateY(6px) !important;
+  }
+}
