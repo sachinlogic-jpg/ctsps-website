@@ -817,3 +817,15 @@ header nav a {
     transform: translateY(6px) !important;
   }
 }
+/* FINAL BUTTON FIX */
+.hero-actions {
+  bottom: 4% !important;
+  transform: none !important;
+}
+
+@media (max-width: 800px) {
+  .hero-actions {
+    bottom: 5% !important;
+    transform: none !important;
+  }
+}
