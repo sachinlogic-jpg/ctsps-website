@@ -786,3 +786,17 @@ header nav a {
 .hero-actions .btn.call::before {
   content: "☎ " !important;
 }
+/* LAPTOP BUTTON FIX */
+@media (min-width: 801px) {
+  .hero-actions {
+    left: 8% !important;
+    bottom: 8% !important;
+    width: 52% !important;
+  }
+
+  .hero-actions .btn {
+    min-height: 42px !important;
+    padding: 8px 12px !important;
+    font-size: 14px !important;
+  }
+}
