@@ -636,3 +636,141 @@ header nav a {
 .hero-actions .btn.call {
   flex: 1 1 0 !important;
 }
+
+
+
+/* CTSPS FINAL FIX */
+
+header {
+  display: block !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 1px !important;
+  z-index: 999 !important;
+  pointer-events: none !important;
+  background: transparent !important;
+}
+
+header .brand,
+header .menu {
+  display: none !important;
+}
+
+header nav {
+  display: flex !important;
+  position: absolute !important;
+  top: 32px !important;
+  right: 4% !important;
+  gap: 18px !important;
+  z-index: 1000 !important;
+  pointer-events: auto !important;
+}
+
+header nav a {
+  color: white !important;
+  font-size: 15px !important;
+  font-weight: bold !important;
+  text-shadow: 1px 1px 4px #000 !important;
+  white-space: nowrap !important;
+  pointer-events: auto !important;
+}
+
+.hero-actions {
+  position: absolute !important;
+  left: 8% !important;
+  bottom: 1% !important;
+  width: 50% !important;
+  display: flex !important;
+  gap: 2% !important;
+  z-index: 1001 !important;
+}
+
+.hero-actions .btn {
+  min-height: 35px !important;
+  padding: 7px 8px !important;
+  font-size: clamp(9px, 1.1vw, 16px) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  white-space: nowrap !important;
+}
+
+.hero-actions .btn.wa::before {
+  content: "☎ ";
+  margin-right: 5px;
+  font-size: 1.2em;
+}
+
+.hero-actions .btn.call::before {
+  content: "☎ ";
+  margin-right: 5px;
+  font-size: 1.2em;
+}
+
+.videos {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 16px !important;
+}
+
+.videos video {
+  width: 100% !important;
+  max-height: 240px !important;
+  aspect-ratio: 16 / 9 !important;
+  object-fit: contain !important;
+}
+
+@media (max-width: 800px) {
+  header nav {
+    top: 3px !important;
+    right: 2% !important;
+    gap: 8px !important;
+  }
+
+  header nav a {
+    font-size: 10px !important;
+  }
+
+  .hero-actions {
+    left: 5% !important;
+    width: 62% !important;
+    bottom: 1% !important;
+  }
+
+  .hero-actions .btn {
+    font-size: 8px !important;
+  }
+
+  .videos {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 500px) {
+  header nav {
+    right: 1% !important;
+    gap: 5px !important;
+  }
+
+  header nav a {
+    font-size: 7px !important;
+  }
+
+  .hero-actions {
+    left: 4% !important;
+    width: 66% !important;
+    bottom: 1% !important;
+  }
+
+  .hero-actions .btn {
+    min-height: 20px !important;
+    padding: 3px 2px !important;
+    font-size: 6px !important;
+  }
+
+  .videos {
+    grid-template-columns: 1fr !important;
+  }
+}
