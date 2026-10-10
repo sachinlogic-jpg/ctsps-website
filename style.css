@@ -774,3 +774,15 @@ header nav a {
     grid-template-columns: 1fr !important;
   }
 }
+/* Final button adjustment */
+.hero-actions {
+  bottom: 5.5% !important;
+}
+
+.hero-actions .btn.wa::before {
+  content: "💬 " !important;
+}
+
+.hero-actions .btn.call::before {
+  content: "☎ " !important;
+}
