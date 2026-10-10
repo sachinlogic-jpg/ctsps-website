@@ -624,9 +624,9 @@ header nav a {
 ```
 /* FINAL BUTTON POSITION */
 .hero-actions {
-  left: 7.5% !important;
-  bottom: 7.5% !important;
-  width: 55% !important;
+  left: 8% !important;
+  bottom: 3.5% !important;
+  width: 48% !important;
 }
 
 .hero-actions .btn.wa {
