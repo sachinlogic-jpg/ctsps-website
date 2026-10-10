@@ -622,3 +622,17 @@ header nav a {
   }
 }
 ```
+/* FINAL BUTTON POSITION */
+.hero-actions {
+  left: 7.5% !important;
+  bottom: 7.5% !important;
+  width: 55% !important;
+}
+
+.hero-actions .btn.wa {
+  flex: 1.35 1 0 !important;
+}
+
+.hero-actions .btn.call {
+  flex: 1 1 0 !important;
+}
